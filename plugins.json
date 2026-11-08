@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    { "repo": "skriewel/jellyfin-alttitles" },
+    { "repo": "skriewel/jellyfin-companions" },
+    { "repo": "skriewel/jellyfin-contentwarnings" },
+    { "repo": "skriewel/Jellyfin-Franchise-Explorer" },
+    { "repo": "skriewel/jellyfin-hovercards" },
+    { "repo": "skriewel/jellyfin-pitchmeetings" },
+    { "repo": "skriewel/jellyfin-previouslyon" }
+  ]
+}

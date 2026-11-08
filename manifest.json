@@ -1,0 +1,398 @@
+[
+  {
+    "guid": "d98afd97-f0cf-4d6b-8a32-3009cd835ac4",
+    "name": "Alternative Titles",
+    "description": "Makes movies and series findable under their other titles: English, German, romanized and original titles, in the web client and in all apps.",
+    "overview": "Search by English, German, romanized and original titles",
+    "owner": "skriewel",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/skriewel/jellyfin-alttitles/main/images/logo.png",
+    "versions": [
+      {
+        "version": "1.0.0.0",
+        "changelog": "First release: search movies and series by their English, German, romanized and other titles (TMDB, AniDB, Korean romanization), in all apps.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-alttitles/releases/download/v1.0.0.0/AltTitles_1.0.0.0.zip",
+        "checksum": "5d95ab727cda9a7bb31d4399bbb570a2",
+        "timestamp": "2026-11-08T17:30:03Z"
+      }
+    ]
+  },
+  {
+    "guid": "5d0a3a1e-2e48-4358-b9a5-5942845aedb4",
+    "name": "Companions",
+    "description": "Links movies and series to their soundtrack in your music library and to the book or audiobook in Audiobookshelf, Kavita, Grimmory or BookOrbit.",
+    "overview": "Soundtracks, books and audiobooks for your movies",
+    "owner": "skriewel",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/skriewel/jellyfin-companions/main/images/logo.png",
+    "versions": [
+      {
+        "version": "1.0.7.0",
+        "changelog": "Books: volume numbers written as v03 or Vol3 are recognised (e.g. Witch Hat Atelier v03 (2019) (Digital)), so such volumes match their series.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-companions/releases/download/v1.0.7.0/Companions_1.0.7.0.zip",
+        "checksum": "c9b0e453289db35e403315002b5ba30c",
+        "timestamp": "2026-11-08T17:09:28Z"
+      },
+      {
+        "version": "1.0.6.0",
+        "changelog": "Books: titles are looked up in several languages (default en, de) so German editions are found too; Explain lists the search words and the books a server found that were not linked, with the reason.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-companions/releases/download/v1.0.6.0/Companions_1.0.6.0.zip",
+        "checksum": "f9aff1d9750b376d833059da8853f9be",
+        "timestamp": "2026-11-08T17:05:29Z"
+      },
+      {
+        "version": "1.0.5.0",
+        "changelog": "Books: the English title is looked up through Jellyfin's TMDB provider and searched too (Atelier of Witch Hat -> Witch Hat Atelier); volume numbers are ignored when comparing titles; more than four volumes of one series on one server are shown as one card with the number of volumes.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-companions/releases/download/v1.0.5.0/Companions_1.0.5.0.zip",
+        "checksum": "f960b37e2e57a0e191a47b4f3e3a2456",
+        "timestamp": "2026-11-08T15:25:06Z"
+      },
+      {
+        "version": "1.0.4.0",
+        "changelog": "Books: a book also matches through its book series (Silo -> Wool, Shift, Dust) in Audiobookshelf, Grimmory and BookOrbit; books of a series are listed in series order.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-companions/releases/download/v1.0.4.0/Companions_1.0.4.0.zip",
+        "checksum": "e6ad1734927a4aa0b4862f0abcac0e46",
+        "timestamp": "2026-11-08T15:18:10Z"
+      },
+      {
+        "version": "1.0.3.0",
+        "changelog": "Books: titles are also searched without a leading number or article (3 Body Problem -> Body Problem), so book servers that search literally find The Three-Body Problem even when Jellyfin knows no source author.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-companions/releases/download/v1.0.3.0/Companions_1.0.3.0.zip",
+        "checksum": "fff1258a697c38239b50def6ba9b1afb",
+        "timestamp": "2026-11-08T14:50:51Z"
+      },
+      {
+        "version": "1.0.2.0",
+        "changelog": "Books: authors match in any name order (Liu Cixin = Cixin Liu), numbers match their words (3 Body Problem = The Three-Body Problem), and titles with a number are also searched with the number spelled out.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-companions/releases/download/v1.0.2.0/Companions_1.0.2.0.zip",
+        "checksum": "427c6896919aa505c26887c8a70ca968",
+        "timestamp": "2026-11-08T14:40:06Z"
+      },
+      {
+        "version": "1.0.1.0",
+        "changelog": "Audiobookshelf covers: falls back to the original image when resizing fails and accepts covers without a content type; failures are logged and shown by Explain. The book row is no longer a Jellyfin item row, so other plugins do not add their cards to it.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-companions/releases/download/v1.0.1.0/Companions_1.0.1.0.zip",
+        "checksum": "c38b6243ae3f4c182107652f52358667",
+        "timestamp": "2026-11-08T14:17:45Z"
+      },
+      {
+        "version": "1.0.0.0",
+        "changelog": "First release: soundtracks from the music library, books and audiobooks from Audiobookshelf, Kavita, Grimmory and BookOrbit",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-companions/releases/download/v1.0.0.0/Companions_1.0.0.0.zip",
+        "checksum": "d872b92522d290a933067a1a2ee6df20",
+        "timestamp": "2026-11-08T13:51:42Z"
+      }
+    ]
+  },
+  {
+    "guid": "33f0a958-1166-4a53-8ddd-12563fdf3fe8",
+    "name": "Content Warnings",
+    "description": "Shows community content warnings from DoesTheDogDie.com on movie and series pages, cached on the server, with optional tags for parental controls.",
+    "overview": "Content warnings from DoesTheDogDie.com",
+    "owner": "skriewel",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/skriewel/jellyfin-contentwarnings/main/images/logo.png",
+    "versions": [
+      {
+        "version": "1.0.0.0",
+        "changelog": "First release: content warnings from DoesTheDogDie.com on movie and series pages",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-contentwarnings/releases/download/v1.0.0.0/ContentWarnings_1.0.0.0.zip",
+        "checksum": "83426c37c7e4cfe146aed37838791979",
+        "timestamp": "2026-11-08T11:15:51Z"
+      }
+    ]
+  },
+  {
+    "guid": "6bc7820b-7c6d-4e64-a139-dfb90b8d6f42",
+    "name": "Franchise Explorer",
+    "description": "Unfinished experimental plugin: virtual hierarchies and read-only responsive Franchises browser; no native My Media tile or media manipulation.",
+    "overview": "Experimental virtual franchise browsing for Jellyfin 12.2 (use caution).",
+    "owner": "skriewel",
+    "category": "General",
+    "versions": [
+      {
+        "version": "0.8.9.26",
+        "changelog": "https://github.com/skriewel/Jellyfin-Franchise-Explorer/releases/tag/v0.8.9.26",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/Jellyfin-Franchise-Explorer/releases/download/v0.8.9.26/franchise-explorer_0.8.9.26.zip",
+        "checksum": "b76391928b84bce447807b4bba2c4621",
+        "timestamp": "2026-11-08T18:54:33Z"
+      },
+      {
+        "version": "0.8.9.25",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.9.25",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.9.25/franchise-explorer_0.8.9.25.zip",
+        "checksum": "c053305706cec77f2ccb38fb9e1dbb1b",
+        "timestamp": "2026-11-08T03:33:32Z"
+      },
+      {
+        "version": "0.8.9.24",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.9.24",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.9.24/franchise-explorer_0.8.9.24.zip",
+        "checksum": "be038d3e20421357560e9f06d32a7c03",
+        "timestamp": "2026-11-06T13:45:36Z"
+      },
+      {
+        "version": "0.8.9.23",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.9.23",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.9.23/franchise-explorer_0.8.9.23.zip",
+        "checksum": "31f7e600e9fb7c373bb34254272831e1",
+        "timestamp": "2026-11-04T23:05:41Z"
+      },
+      {
+        "version": "0.8.9.22",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.9.22",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.9.22/franchise-explorer_0.8.9.22.zip",
+        "checksum": "079983d54616766350c19565bc8f08c2",
+        "timestamp": "2026-11-04T01:53:21Z"
+      },
+      {
+        "version": "0.8.9.21",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.9.21",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.9.21/franchise-explorer_0.8.9.21.zip",
+        "checksum": "b482cc62a1fe48306811c18beddb40a8",
+        "timestamp": "2026-11-04T00:51:42Z"
+      },
+      {
+        "version": "0.8.9.20",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.9.20",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.9.20/franchise-explorer_0.8.9.20.zip",
+        "checksum": "716486ed0863e52cfc5627a88a053e3f",
+        "timestamp": "2026-11-02T22:58:48Z"
+      },
+      {
+        "version": "0.8.9.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.9.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.9.0/franchise-explorer_0.8.9.0.zip",
+        "checksum": "e933a170cd39910a97332fdaa4d56c39",
+        "timestamp": "2026-10-28T22:29:19Z"
+      },
+      {
+        "version": "0.8.8.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.8.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.8.0/franchise-explorer_0.8.8.0.zip",
+        "checksum": "220d53a8bd0586b32aac9a42c1ab7620",
+        "timestamp": "2026-10-28T14:32:20Z"
+      },
+      {
+        "version": "0.8.7.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.7.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.7.0/franchise-explorer_0.8.7.0.zip",
+        "checksum": "e18d70db7b030fce6117071bb5150c2e",
+        "timestamp": "2026-10-28T13:38:06Z"
+      },
+      {
+        "version": "0.8.6.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.6.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.6.0/franchise-explorer_0.8.6.0.zip",
+        "checksum": "500898cf094692446f2276ac1c4f9725",
+        "timestamp": "2026-10-28T13:01:57Z"
+      },
+      {
+        "version": "0.8.5.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.5.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.5.0/franchise-explorer_0.8.5.0.zip",
+        "checksum": "c7321bbf566b90e631ca4117348eaaae",
+        "timestamp": "2026-10-28T12:02:25Z"
+      },
+      {
+        "version": "0.8.4.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.4.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.4.0/franchise-explorer_0.8.4.0.zip",
+        "checksum": "0033cc8c11706a83929456ec2d464277",
+        "timestamp": "2026-10-28T10:52:38Z"
+      },
+      {
+        "version": "0.8.3.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.3.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.3.0/franchise-explorer_0.8.3.0.zip",
+        "checksum": "62a5d660f69a67cc5b3b1b59c4aeee76",
+        "timestamp": "2026-10-28T10:18:14Z"
+      },
+      {
+        "version": "0.8.1.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.1.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.1.0/franchise-explorer_0.8.1.0.zip",
+        "checksum": "90991f8f865a9de0ddde032dad12158c",
+        "timestamp": "2026-10-28T08:50:46Z"
+      },
+      {
+        "version": "0.8.0.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.8.0.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.8.0.0/franchise-explorer_0.8.0.0.zip",
+        "checksum": "b178e491df74816d77ce75840f640788",
+        "timestamp": "2026-10-28T07:37:09Z"
+      },
+      {
+        "version": "0.7.4.1",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.7.4.1",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.7.4.1/franchise-explorer_0.7.4.1.zip",
+        "checksum": "cc5e23ede6c5c9799882d2c0f53d25d1",
+        "timestamp": "2026-10-28T06:59:44Z"
+      },
+      {
+        "version": "0.7.4.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.7.4.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.7.4.0/franchise-explorer_0.7.4.0.zip",
+        "checksum": "bac320c51a1fb3d48520c8b27ae1f028",
+        "timestamp": "2026-10-28T06:13:34Z"
+      },
+      {
+        "version": "0.7.3.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.7.3.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.7.3.0/franchise-explorer_0.7.3.0.zip",
+        "checksum": "dbb0ee4e87606aa4b428a80cee7c46fa",
+        "timestamp": "2026-10-28T05:54:41Z"
+      },
+      {
+        "version": "0.7.2.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.7.2.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.7.2.0/franchise-explorer_0.7.2.0.zip",
+        "checksum": "3edf9c13af7a17aa465cd001ba905587",
+        "timestamp": "2026-10-28T05:36:33Z"
+      },
+      {
+        "version": "0.7.1.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.7.1.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.7.1.0/franchise-explorer_0.7.1.0.zip",
+        "checksum": "8984d674ab859ac1d56689063d50a9d1",
+        "timestamp": "2026-10-28T05:00:08Z"
+      },
+      {
+        "version": "0.7.0.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.7.0.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.7.0.0/franchise-explorer_0.7.0.0.zip",
+        "checksum": "63634dce669eac105301e38a2c299687",
+        "timestamp": "2026-10-28T04:39:55Z"
+      },
+      {
+        "version": "0.6.2.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.6.2.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.6.2.0/franchise-explorer_0.6.2.0.zip",
+        "checksum": "12e81c4c23a163a9cd4273490eb7b87d",
+        "timestamp": "2026-10-27T06:52:08Z"
+      },
+      {
+        "version": "0.3.0.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.3.0.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.3.0.0/franchise-explorer_0.3.0.0.zip",
+        "checksum": "fe0cc7849a16dc404fcc44948ee79c39",
+        "timestamp": "2026-10-26T22:49:21Z"
+      },
+      {
+        "version": "0.2.0.0",
+        "changelog": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/tag/v0.2.0.0",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Gost1o1/Jellyfin-Franchise-Explorer/releases/download/v0.2.0.0/franchise-explorer_0.2.0.0.zip",
+        "checksum": "275b05596a0db5124439b76ce2f3dd53",
+        "timestamp": "2026-10-26T22:29:20Z"
+      }
+    ]
+  },
+  {
+    "guid": "7c3e2a51-9b6d-4f1e-8a2c-5d4b1e0f6a93",
+    "name": "Hover Cards",
+    "description": "Expanding hover previews for movie and series cards on the home screen, with backdrop, details and quick actions.",
+    "overview": "Streaming-style hover previews for media cards",
+    "owner": "skriewel",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/skriewel/jellyfin-hovercards/main/images/logo.png",
+    "versions": [
+      {
+        "version": "1.0.4.1",
+        "changelog": "Plugin image for the dashboard and the plugin catalog",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-hovercards/releases/download/v1.0.4.1/HoverCards_1.0.4.1.zip",
+        "checksum": "184ac2e4e7d6c404fac377b0cfae2f88",
+        "timestamp": "2026-11-06T18:24:47Z"
+      },
+      {
+        "version": "1.0.4.0",
+        "changelog": "Optional: poster widens in place inside its row (Prime-style)",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-hovercards/releases/download/v1.0.4.0/HoverCards_1.0.4.0.zip",
+        "checksum": "57ad1161b6124d315ac5726f9743fd01",
+        "timestamp": "2026-11-04T21:14:02Z"
+      }
+    ]
+  },
+  {
+    "guid": "263fd402-979d-4384-8f9c-889c416552bf",
+    "name": "Pitch Meetings",
+    "description": "Shows the matching Pitch Meeting video on movie and series pages, and links each Pitch Meeting back to its movie.",
+    "overview": "Links Pitch Meeting videos to their movies and shows",
+    "owner": "skriewel",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/skriewel/jellyfin-pitchmeetings/main/images/logo.png",
+    "versions": [
+      {
+        "version": "1.0.0.1",
+        "changelog": "Plugin image for the dashboard and the plugin catalog",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-pitchmeetings/releases/download/v1.0.0.1/PitchMeetings_1.0.0.1.zip",
+        "checksum": "8a09d239c609e51cdb018383b8c24e77",
+        "timestamp": "2026-11-06T18:24:49Z"
+      },
+      {
+        "version": "1.0.0.0",
+        "changelog": "First release: automatic links between Pitch Meetings and movies/series",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-pitchmeetings/releases/download/v1.0.0.0/PitchMeetings_1.0.0.0.zip",
+        "checksum": "a0312d31cfdfdae5b95f5551a4a30094",
+        "timestamp": "2026-11-06T18:01:20Z"
+      }
+    ]
+  },
+  {
+    "guid": "6257f11a-c7cd-4fc5-b2c0-2e327ccf7c7d",
+    "name": "Previously On",
+    "description": "Shows a short recap of the last episodes (from the episode descriptions in your library) before an episode starts after a long break.",
+    "overview": "Previously on: recap after a break",
+    "owner": "skriewel",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/skriewel/jellyfin-previouslyon/main/images/logo.png",
+    "versions": [
+      {
+        "version": "1.0.0.0",
+        "changelog": "First release: recap of the previous episodes before playback after a break",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/skriewel/jellyfin-previouslyon/releases/download/v1.0.0.0/PreviouslyOn_1.0.0.0.zip",
+        "checksum": "b950fa3d4a2db463c375e003e251dfab",
+        "timestamp": "2026-11-08T13:09:47Z"
+      }
+    ]
+  }
+]

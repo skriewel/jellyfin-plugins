@@ -1,0 +1,44 @@
+name: Build catalog manifest
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      verify:
+        description: 'Download every ZIP and check its MD5'
+        type: boolean
+        default: false
+  repository_dispatch:
+    types: [plugin-released]
+  push:
+    branches: [main]
+    paths: [plugins.json, build_manifest.py]
+permissions:
+  contents: write
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Merge plugin manifests
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERIFY: ${{ inputs.verify && '--verify' || '' }}
+        run: python3 build_manifest.py $VERIFY
+      - name: Commit catalog if it changed
+        run: |
+          if git diff --quiet -- manifest.json README.md; then
+            echo "Catalog unchanged."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add manifest.json README.md
+          git commit -m "catalog: update plugin manifest"
+          git push origin HEAD:main
