@@ -6,6 +6,7 @@
     { "repo": "skriewel/Jellyfin-Franchise-Explorer" },
     { "repo": "skriewel/jellyfin-hovercards" },
     { "repo": "skriewel/jellyfin-pitchmeetings" },
+    { "repo": "skriewel/jellyfin-playbackinfo" },
     { "repo": "skriewel/jellyfin-previouslyon" }
   ]
 }
