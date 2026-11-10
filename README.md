@@ -24,7 +24,7 @@ offered by exactly one repository.
 | Franchise Explorer | 0.8.9.26 | Experimental virtual franchise browsing for Jellyfin 12.2 (use caution). |
 | Hover Cards | 1.0.4.1 | Streaming-style hover previews for media cards |
 | Pitch Meetings | 1.0.0.1 | Links Pitch Meeting videos to their movies and shows |
-| Playback Info | 1.0.0.2 | Video quality and play method in the web player controls |
+| Playback Info | 1.0.0.3 | Video quality and play method in the web player controls |
 | Previously On | 1.0.0.0 | Previously on: recap after a break |
 
 ## How this catalog is built
